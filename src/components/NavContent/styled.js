@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
+import { secondaryGrey } from '../../styles/Colors';
+
 export const NavStyle = styled.div`
   display: flex;
-  // justify-content: center;
   align-items: center;
 
   height: 4.5rem;
   width: 100%;
 
-  background-color: blue;
+  background-color: ${secondaryGrey};
 
   margin-bottom: 1.5rem;
 

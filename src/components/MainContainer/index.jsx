@@ -7,6 +7,7 @@ import { SideBar } from '../SideBar';
 import { About } from '../../pages/About';
 import { NavContent } from '../NavContent';
 import { Resume } from '../../pages/Resume';
+import { Portifolio } from '../../pages/Portifolio';
 
 import { Container, ContentContainer, Content } from './styled';
 
@@ -28,6 +29,9 @@ export function MainContainer() {
               </Route>
               <Route path="/resume">
                 <Resume />
+              </Route>
+              <Route path="/portifolio">
+                <Portifolio />
               </Route>
 
             </Switch>

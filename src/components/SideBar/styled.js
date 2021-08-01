@@ -1,26 +1,41 @@
 import styled from 'styled-components';
 
+import { secondaryGrey, primaryViolet } from '../../styles/Colors';
+
 export const Aside = styled.aside`
-  background: red;
+  background: ${secondaryGrey};
 
   margin-right: 1.75rem;
 
   width: 26rem;
   min-height: 43.75rem;
 
-  h2 {
+  h1 {
     padding: 1rem 0rem 0rem 1rem;
+  }
+
+  h2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2::before, h2::after {
+    content: "";
+    background-color: rgba(191, 191, 191, .3);
+    width: 100%;
+    height: 1px;
+    margin: 1rem 0rem;
   }
 
   > img {
     width: 100%;
     height: 13.125rem;
+    margin-top: 1rem;
   }
 `;
 
 export const InfoContainer = styled.div`
-  background-color: darkcyan;
-
   padding: 1rem;
 
   > span {
@@ -32,8 +47,6 @@ export const InfoContainer = styled.div`
 `;
 
 export const SocialProfile = styled.div`
-  background-color: green;
-
   > div {
     display: flex;
     justify-content: space-evenly;
@@ -83,7 +96,7 @@ export const Skills = styled.div`
     align-items: center;
     justify-content: space-between;
 
-    color: black;
+    color: ${primaryViolet};
     width: 100%;
 
     padding: 1rem;

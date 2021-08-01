@@ -1,6 +1,6 @@
 import { React } from 'react';
 
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { GrGoogle, GrDocumentDownload } from 'react-icons/gr';
 import { CreateCircularProgress } from '../CreateCircularProgress';
 
@@ -31,7 +31,7 @@ function progress(tech, percent) {
 export function SideBar() {
   return (
     <Aside>
-      <h2>Professional Details</h2>
+      <h1>Professional Details</h1>
 
       <img src={ProfilePic} alt="Black man in suit" />
 
@@ -50,9 +50,10 @@ export function SideBar() {
         <h2>Social Profile</h2>
 
         <div>
-          <FaFacebookF />
           <GrGoogle />
-          <FaLinkedinIn />
+          <a href="https://www.linkedin.com/in/vinicius-inocencio/" target="_blank" rel="noreferrer noopener">
+            <FaLinkedinIn />
+          </a>
           <FaInstagram />
         </div>
       </SocialProfile>
