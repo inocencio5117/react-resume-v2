@@ -8,6 +8,7 @@ import { About } from '../../pages/About';
 import { NavContent } from '../NavContent';
 import { Resume } from '../../pages/Resume';
 import { Portifolio } from '../../pages/Portifolio';
+import { ContactMe } from '../../pages/ContactMe';
 
 import { Container, ContentContainer, Content } from './styled';
 
@@ -32,6 +33,9 @@ export function MainContainer() {
               </Route>
               <Route path="/portifolio">
                 <Portifolio />
+              </Route>
+              <Route path="/contactme">
+                <ContactMe />
               </Route>
 
             </Switch>

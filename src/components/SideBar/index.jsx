@@ -72,7 +72,7 @@ export function SideBar() {
       <Skills>
         <h2>Skills</h2>
 
-        {progress('HTML', 95)}
+        {progress('HTML', 90)}
         {progress('CSS', 85)}
         {progress('Javascript', 80)}
         {progress('Python', 75)}

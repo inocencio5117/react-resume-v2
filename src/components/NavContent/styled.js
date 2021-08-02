@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-import { secondaryGrey } from '../../styles/Colors';
+import { secondaryGrey, primaryPurple, textColor } from '../../styles/Colors';
 
 export const NavStyle = styled.div`
   display: flex;
   align-items: center;
 
-  height: 4.5rem;
+  height: 4.125rem;
   width: 100%;
 
   background-color: ${secondaryGrey};
@@ -31,19 +31,20 @@ export const NavStyle = styled.div`
       width: 100%;
       height: 100%;
 
-      letter-spacing: .1rem;
-      font-size: 1.175rem;
+      font-size: 1.15rem;
 
       padding: 0rem 2.75rem;
 
       transition: all 450ms ease-in-out;
 
       > a {
+        margin-left: .5rem;
         color: inherit;
       }
 
      &:hover {
-       background-color: grey;
+       background-color: ${primaryPurple};
+       color: ${textColor};
      }
     }
   }

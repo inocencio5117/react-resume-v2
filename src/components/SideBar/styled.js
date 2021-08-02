@@ -5,7 +5,7 @@ import { secondaryGrey, primaryViolet } from '../../styles/Colors';
 export const Aside = styled.aside`
   background: ${secondaryGrey};
 
-  margin-right: 1.75rem;
+  margin: 0rem 1.75rem 2rem 0rem;
 
   width: 26rem;
   min-height: 43.75rem;
@@ -55,13 +55,13 @@ export const SocialProfile = styled.div`
   > div > * {
     cursor: pointer;
 
-    font-size: 1.375rem;
-    margin: 1rem;
+    font-size: 1.5rem;
+    margin: .75rem;
 
     transition: all 300ms ease;
 
     &:hover {
-      color: #000;
+      color: ${primaryViolet};
     }
   }
 `;
@@ -84,12 +84,18 @@ export const Attachments = styled.div`
 
     padding: .75rem .5rem;
     margin-top: 1rem;
+
+    span + span {
+      cursor: pointer;
+    }
   }
 `;
 
 export const Skills = styled.div`
   display: flex;
   flex-direction: column;
+
+  margin: 1rem 0rem;
 
   > div {
     display: flex;

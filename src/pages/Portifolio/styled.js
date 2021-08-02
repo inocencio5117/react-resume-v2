@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
-export const PortifolioContainer = styled.section`
-    background-color: red;
+import { Pages } from '../../styles/Pages';
 
-    width: 52.5rem;
-    height: 100%;
+export const PortifolioContainer = styled.section`
+    ${Pages}
 `;
