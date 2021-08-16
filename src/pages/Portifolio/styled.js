@@ -14,4 +14,8 @@ export const Projs = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: .45rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+}
 `;

@@ -7,4 +7,11 @@ export const Pages = `
   height: auto;
 
   padding-bottom: 2rem;
+
+  @media (max-width: 1024px) {
+    width: 45rem;
+  }
+  @media (max-width: 768px) {
+    width: 21.25rem;
+  }
 `;

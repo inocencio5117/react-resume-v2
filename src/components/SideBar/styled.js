@@ -33,6 +33,15 @@ export const Aside = styled.aside`
     height: 13.125rem;
     margin-top: 1rem;
   }
+
+  @media (max-width: 1024px) {
+    margin-right: 0rem;
+    width: 95%;
+
+  }
+  @media (max-width: 768px) {
+    width: 21.25rem;
+  }
 `;
 
 export const InfoContainer = styled.div`

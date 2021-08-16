@@ -48,4 +48,13 @@ export const NavStyle = styled.div`
      }
     }
   }
+
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+
+  }
 `;

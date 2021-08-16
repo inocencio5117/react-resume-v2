@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { primaryViolet, secondaryGrey } from '../../styles/Colors';
 
-export const ProjectsContainer = styled.section`
+export const ProjectsContainer = styled.div`
   padding: 1rem;
 
   > span {
