@@ -17,10 +17,10 @@ export function MainContainer() {
     <BrowserRouter>
 
       <Container>
-        <NavBar />
         <ContentContainer>
           <SideBar />
           <Content>
+            <NavBar />
             <NavContent />
 
             <Switch>

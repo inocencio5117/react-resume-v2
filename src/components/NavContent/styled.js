@@ -50,7 +50,7 @@ export const NavStyle = styled.div`
   }
 
   @media (max-width: 1024px) {
-    width: auto;
+    width: 80vw;
   }
 
   @media (max-width: 768px) {

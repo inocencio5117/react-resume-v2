@@ -34,13 +34,18 @@ export const Aside = styled.aside`
     margin-top: 1rem;
   }
 
+  @media (max-width: 1160px) {
+    margin-right: 0rem;
+    width: 100%;
+  }
+
   @media (max-width: 1024px) {
     margin-right: 0rem;
-    width: 95%;
-
+    width: 80vw;
   }
+
   @media (max-width: 768px) {
-    width: 21.25rem;
+    width: 80vw;
   }
 `;
 

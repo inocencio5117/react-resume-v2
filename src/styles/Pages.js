@@ -9,9 +9,9 @@ export const Pages = `
   padding-bottom: 2rem;
 
   @media (max-width: 1024px) {
-    width: 45rem;
+    width: 80vw;
   }
   @media (max-width: 768px) {
-    width: 21.25rem;
+    width: 80vw;
   }
 `;

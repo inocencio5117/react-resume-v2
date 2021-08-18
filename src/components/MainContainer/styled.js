@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   @media (max-width: 1230px) {
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 1rem;
   }
 
   @media (max-width: 768px) {
@@ -38,6 +38,6 @@ export const Content = styled.div`
   align-items: center;
 
   @media (max-width: 1024px) {
-    width: 50%;
+    width: 80vw;
   }
 `;

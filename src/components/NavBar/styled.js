@@ -8,8 +8,12 @@ export const Nav = styled.nav`
   font-size: 1.25rem;
   margin-bottom: 1.25rem;
 
-  width: 100%;
+  width: 21rem;
   height: auto;
+
+  @media (max-width: 756px) {
+      width: 80vw;
+    }
 
   .hamburguer {
     height: 1.75rem;
