@@ -37,6 +37,11 @@ export const Aside = styled.aside`
   @media (max-width: 1160px) {
     margin-right: 0rem;
     width: 100%;
+
+    > img {
+      width: auto;
+      margin-left: 25%;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -46,6 +51,11 @@ export const Aside = styled.aside`
 
   @media (max-width: 768px) {
     width: 80vw;
+
+    > img {
+      width: 100%;
+      margin-left: 0rem;
+    }
   }
 `;
 

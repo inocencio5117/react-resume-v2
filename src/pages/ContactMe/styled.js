@@ -25,6 +25,31 @@ export const ContactContainer = styled.section`
         transition: all 350ms ease-in-out;
       }
 
+      > button {
+        background-color: ${primaryPurple};
+        color: #fff;
+
+        outline: none;
+        border: none;
+
+        height: 2rem;
+        width: 15%;
+
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 500;
+
+        border-radius: 10px;
+        cursor: pointer;
+
+        transition: all 250ms ease-in-out;
+      }
+
+      > button:hover {
+        color: #000;
+        background-color: #fff;
+      }
+
       input:focus, textarea:focus {
         border: 2px solid ${primaryPurple};
         outline: 1px solid ${primaryPurple};

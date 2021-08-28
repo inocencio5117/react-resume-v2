@@ -54,7 +54,9 @@ export function SideBar() {
           <a href="https://www.linkedin.com/in/vinicius-inocencio/" target="_blank" rel="noreferrer noopener">
             <FaLinkedinIn />
           </a>
-          <FaInstagram />
+          <a href="https://www.instagram.com/fn_inocencio/" target="_blank" rel="noreferrer noopener">
+            <FaInstagram />
+          </a>
         </div>
       </SocialProfile>
 
