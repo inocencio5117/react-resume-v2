@@ -23,6 +23,10 @@ export const NavStyle = styled.div`
 
     cursor: pointer;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
     li {
       display: flex;
       align-items: center;
@@ -36,6 +40,10 @@ export const NavStyle = styled.div`
       padding: 0rem 2.75rem;
 
       transition: all 450ms ease-in-out;
+
+      @media (max-width: 768px) {
+        margin-bottom: .25rem;
+      }
 
       > a {
         margin-left: .5rem;
@@ -54,7 +62,15 @@ export const NavStyle = styled.div`
   }
 
   @media (max-width: 768px) {
-    display: none;
 
+    &.open {
+      display: flex;
+      background-color: transparent;
+      margin: 1.5rem 0rem 2.75rem 0rem;
+    }
+
+    &.closed {
+      display: none;
+    }
   }
 `;

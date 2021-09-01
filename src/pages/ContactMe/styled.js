@@ -55,5 +55,13 @@ export const ContactContainer = styled.section`
         outline: 1px solid ${primaryPurple};
         background-color: rgba(189, 195, 199, 1);
       }
+      @media (max-width: 1024px) {
+        > button {
+          align-self: center;
+
+          width: 80%;
+          height: 2.25rem;
+        }
+      }
     }
 `;

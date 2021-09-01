@@ -75,10 +75,10 @@ export function SideBar() {
         <h2>Skills</h2>
 
         {progress('HTML', 90)}
-        {progress('CSS', 85)}
+        {progress('CSS', 80)}
         {progress('Javascript', 80)}
-        {progress('Python', 75)}
-        {progress('React.js', 60)}
+        {progress('Python', 60)}
+        {progress('React.js', 65)}
       </Skills>
     </Aside>
   );
