@@ -9,4 +9,8 @@ export const AppContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @media only screen and (max-width: 800px) {
+    padding: 1.25rem 0rem;
+  }
 `;

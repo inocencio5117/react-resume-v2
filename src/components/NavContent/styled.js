@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { secondaryGrey, primaryPurple, textColor } from '../../styles/Colors';
+import { secondaryGrey, primaryViolet } from '../../styles/Colors';
 
 export const NavStyle = styled.div`
   display: flex;
@@ -20,8 +20,6 @@ export const NavStyle = styled.div`
 
     width: 100%;
     height: 100%;
-
-    cursor: pointer;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -46,14 +44,21 @@ export const NavStyle = styled.div`
       }
 
       > a {
-        margin-left: .5rem;
-        color: inherit;
-      }
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-     &:hover {
-       background-color: ${primaryPurple};
-       color: ${textColor};
-     }
+        color: inherit;
+        cursor: pointer;
+
+        svg {
+          margin-right: .5rem;
+        }
+
+        &:hover {
+          color: ${primaryViolet};
+        }
+      }
     }
   }
 

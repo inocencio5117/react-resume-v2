@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { Pages } from '../../styles/Pages';
 import { HeaderStyle } from '../../styles/HeaderStyle';
-import { primaryPurple } from '../../styles/Colors';
+import { primaryViolet } from '../../styles/Colors';
 
 export const AboutContainer = styled.section`
   ${Pages}
@@ -25,7 +25,7 @@ export const Knoledge = styled.div`
 
     .check {
       margin-right: 1rem;
-      color: ${primaryPurple};
+      color: ${primaryViolet};
 
       font-size: 1.325rem;
     }

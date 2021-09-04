@@ -1,7 +1,9 @@
 /* eslint-disable no-console */
-import { React } from 'react';
+import { React, useState } from 'react';
 
 import { sendForm } from 'emailjs-com';
+
+import validator from 'validator';
 
 import { toast, ToastContainer } from 'react-toastify';
 import { ContactContainer } from './styled';
@@ -26,17 +28,30 @@ export function ContactMe() {
       });
   }
 
+  const [emailError, setEmailError] = useState('');
+  const validateEmail = (e) => {
+    const email = e.target.value;
+
+    if (validator.isEmail(email)) {
+      setEmailError('');
+    } else {
+      setEmailError('Enter valid Email!');
+    }
+  };
+
   return (
     <ContactContainer>
       <h3>Contact Me</h3>
 
       <form onSubmit={sendEmail}>
         <input type="text" placeholder="NAME" name="user_name" />
-        <input type="text" placeholder="EMAIL" name="user_email" />
+        <input type="text" placeholder="EMAIL" name="user_email" onChange={(e) => validateEmail(e)} />
+        {emailError !== '' ? <span className="error">{emailError}</span> : null}
         <input type="text" placeholder="SUBJECT" name="subject" />
         <textarea name="message" id="content" cols="30" rows="10" placeholder="CONTENT" />
 
         <button type="submit">SEND</button>
+
         <ToastContainer />
       </form>
     </ContactContainer>

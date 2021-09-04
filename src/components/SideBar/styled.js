@@ -53,6 +53,13 @@ export const Aside = styled.aside`
     width: 80vw;
 
     > img {
+      width: auto;
+      margin-left: 25%;
+    }
+  }
+
+  @media (max-width: 597px) {
+    > img {
       width: 100%;
       margin-left: 0rem;
     }

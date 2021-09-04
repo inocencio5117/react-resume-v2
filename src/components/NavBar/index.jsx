@@ -8,7 +8,7 @@ import { Nav } from './styled';
 
 export function NavBar() {
   // Getting width from window
-  const [width, setWidth] = useState();
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     function handleResize() {
@@ -33,7 +33,7 @@ export function NavBar() {
 
   return (
     <>
-      {(width < 756)
+      {(width < 771 || window.onload)
       && (
       <Nav>
         <h2>Menu</h2>

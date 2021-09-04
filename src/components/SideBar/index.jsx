@@ -1,7 +1,8 @@
 import { React } from 'react';
 
+import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import { GrGoogle, GrDocumentDownload } from 'react-icons/gr';
+import { GrDocumentDownload } from 'react-icons/gr';
 import { CreateCircularProgress } from '../CreateCircularProgress';
 
 import ProfilePic from '../../assets/images/black_man.jpg';
@@ -50,7 +51,9 @@ export function SideBar() {
         <h2>Social Profile</h2>
 
         <div>
-          <GrGoogle />
+          <a href="https://github.com/inocencio5117" target="_blank" rel="noreferrer noopener">
+            <AiFillGithub />
+          </a>
           <a href="https://www.linkedin.com/in/vinicius-inocencio/" target="_blank" rel="noreferrer noopener">
             <FaLinkedinIn />
           </a>

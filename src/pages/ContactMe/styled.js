@@ -15,6 +15,11 @@ export const ContactContainer = styled.section`
 
       padding: 0rem 1rem;
 
+      .error {
+        color: red;
+        margin: .5rem 0rem;
+      }
+
       > input, textarea {
         width: 100%;
         margin-bottom: .5rem;
