@@ -2,6 +2,7 @@
 This application is an online resume meant to show my skills and studying progress
 
 ## Access link
+[Here](https://inocencio-resume.netlify.app/)
 
 ## Functionality
 - Responsible layout
