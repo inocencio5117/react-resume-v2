@@ -25,16 +25,16 @@ export function MainContainer() {
 
             <Switch>
 
-              <Route path="/" exact>
+              <Route path="/" exact component={About}>
                 <About />
               </Route>
-              <Route path="/resume" exact>
+              <Route path="/resume" exact component={Resume}>
                 <Resume />
               </Route>
-              <Route path="/portifolio" exact>
+              <Route path="/portifolio" exact component={Portifolio}>
                 <Portifolio />
               </Route>
-              <Route path="/contactme" exact>
+              <Route path="/contactme" exact component={ContactMe}>
                 <ContactMe />
               </Route>
 
