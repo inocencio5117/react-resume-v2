@@ -25,7 +25,7 @@ export function MainContainer() {
 
             <Switch>
 
-              <Route path="/" exact>
+              <Route path="/">
                 <About />
               </Route>
               <Route path="/resume">
