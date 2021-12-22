@@ -1,15 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { Pages } from '../../styles/Pages';
-import { HeaderStyle } from '../../styles/HeaderStyle';
-import { primaryViolet } from '../../styles/Colors';
+import { Pages } from "../../styles/Pages";
+import { HeaderStyle } from "../../styles/HeaderStyle";
+import { primaryViolet } from "../../styles/Colors";
 
 export const AboutContainer = styled.section`
   ${Pages}
-
 `;
 
-export const IAm = styled.p`
+export const IAm = styled.section`
   ${HeaderStyle()}
 
   > div {
@@ -33,7 +32,6 @@ export const Knoledge = styled.div`
     > li {
       display: flex;
       align-items: center;
-
     }
   }
 `;

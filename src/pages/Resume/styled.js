@@ -1,11 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { Pages } from '../../styles/Pages';
-import { HeaderStyle } from '../../styles/HeaderStyle';
+import { Pages } from "../../styles/Pages";
+import { HeaderStyle } from "../../styles/HeaderStyle";
 
 export const ResumeContainer = styled.section`
-    ${Pages}
-
+  ${Pages}
 `;
 
 export const Bio = styled.section`
@@ -25,10 +24,11 @@ export const AfterContent = styled.section`
     display: flex;
     flex-direction: column;
 
-    > div, > p {
+    > div,
+    > pre {
       margin-bottom: 1.75rem;
+      font-family: "Roboto", sans-Serif;
     }
-
 
     width: 100%;
 

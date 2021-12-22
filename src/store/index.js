@@ -1,4 +1,4 @@
-import { createStore } from 'redux';
+import { createStore } from "redux";
 
 const initialState = {
   toggler: true,
@@ -6,13 +6,14 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'TOGGLE_ACTION': {
+    case "TOGGLE_ACTION": {
       const newState = { ...state };
       newState.toggler = !newState.toggler;
       return newState;
     }
 
-    default: return state;
+    default:
+      return state;
   }
 };
 

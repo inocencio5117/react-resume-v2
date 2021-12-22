@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { secondaryGrey, primaryViolet } from '../../styles/Colors';
+import { secondaryGrey, primaryViolet } from "../../styles/Colors";
 
 export const NavStyle = styled.div`
   display: flex;
@@ -40,7 +40,7 @@ export const NavStyle = styled.div`
       transition: all 450ms ease-in-out;
 
       @media (max-width: 768px) {
-        margin-bottom: .25rem;
+        margin-bottom: 0.25rem;
       }
 
       > a {
@@ -52,7 +52,7 @@ export const NavStyle = styled.div`
         cursor: pointer;
 
         svg {
-          margin-right: .5rem;
+          margin-right: 0.5rem;
         }
 
         &:hover {
@@ -67,7 +67,6 @@ export const NavStyle = styled.div`
   }
 
   @media (max-width: 768px) {
-
     &.open {
       display: flex;
       background-color: transparent;

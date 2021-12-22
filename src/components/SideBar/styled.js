@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { secondaryGrey, primaryViolet } from '../../styles/Colors';
+import { secondaryGrey, primaryViolet } from "../../styles/Colors";
 
 export const Aside = styled.aside`
   background: ${secondaryGrey};
@@ -20,18 +20,19 @@ export const Aside = styled.aside`
     flex-direction: column;
   }
 
-  h2::before, h2::after {
+  h2::before,
+  h2::after {
     content: "";
-    background-color: rgba(191, 191, 191, .3);
+    background-color: rgba(191, 191, 191, 0.3);
     width: 100%;
     height: 1px;
     margin: 1rem 0rem;
   }
 
   > img {
-    width: 100%;
-    height: 13.125rem;
-    margin-top: 1rem;
+    width: auto;
+    height: 16rem;
+    margin: 1rem 4rem;
   }
 
   @media (max-width: 1160px) {
@@ -40,7 +41,8 @@ export const Aside = styled.aside`
 
     > img {
       width: auto;
-      margin-left: 25%;
+      height: 15rem;
+      margin-left: 35%;
     }
   }
 
@@ -54,14 +56,14 @@ export const Aside = styled.aside`
 
     > img {
       width: auto;
-      margin-left: 25%;
+      margin: 1rem 35%;
     }
   }
 
   @media (max-width: 597px) {
     > img {
-      width: 100%;
-      margin-left: 0rem;
+      width: auto;
+      margin: 1rem 25%;
     }
   }
 `;
@@ -73,7 +75,7 @@ export const InfoContainer = styled.div`
     display: flex;
     justify-content: space-between;
 
-    padding: .75rem 0rem;
+    padding: 0.75rem 0rem;
   }
 `;
 
@@ -87,7 +89,7 @@ export const SocialProfile = styled.div`
     cursor: pointer;
 
     font-size: 1.5rem;
-    margin: .75rem;
+    margin: 0.75rem;
 
     transition: all 300ms ease;
 
@@ -113,7 +115,7 @@ export const Attachments = styled.div`
     width: 90%;
     border-radius: 5px;
 
-    padding: .75rem .5rem;
+    padding: 0.75rem 0.5rem;
     margin-top: 1rem;
 
     span + span {

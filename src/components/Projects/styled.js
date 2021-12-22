@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { primaryViolet, secondaryGrey } from '../../styles/Colors';
+import { primaryViolet, secondaryGrey } from "../../styles/Colors";
 
 export const ProjectsContainer = styled.div`
   padding: 1rem;
@@ -15,11 +15,16 @@ export const ProjectsContainer = styled.div`
     background-color: ${secondaryGrey};
 
     padding: 1rem;
-    margin: .5rem;
+    margin: 0.5rem;
 
     border-radius: inherit;
 
     transition: all 250ms ease-in-out;
+
+    div > p {
+      font-size: 0.925rem;
+      margin: 0.5rem 0rem;
+    }
 
     a {
       display: flex;
@@ -34,11 +39,11 @@ export const ProjectsContainer = styled.div`
       cursor: pointer;
 
       .arrow {
-        margin-left: .7rem;
+        margin-left: 0.7rem;
+      }
     }
-  }
 
-  &:hover {
+    &:hover {
       transform: scale(1.1);
     }
   }

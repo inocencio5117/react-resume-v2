@@ -1,6 +1,5 @@
 export function HeaderStyle() {
-  return (
-    `
+  return `
     h3 {
       padding: 1.25rem 0rem;
       text-align: center;
@@ -15,6 +14,5 @@ export function HeaderStyle() {
       width: 100%;
       height: 1px;
       margin: 1rem 0rem;
-    }`
-  );
+    }`;
 }

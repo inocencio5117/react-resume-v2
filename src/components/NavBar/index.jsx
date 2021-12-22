@@ -1,10 +1,13 @@
-import { React, useState, useEffect } from 'react';
+/* eslint-disable quotes */
+/* eslint-disable react/jsx-no-bind */
 
-import { useDispatch } from 'react-redux';
+import { React, useState, useEffect } from "react";
 
-import { BiMenu } from 'react-icons/bi';
+import { useDispatch } from "react-redux";
 
-import { Nav } from './styled';
+import { BiMenu } from "react-icons/bi";
+
+import { Nav } from "./styled";
 
 export function NavBar() {
   // Getting width from window
@@ -14,10 +17,10 @@ export function NavBar() {
     function handleResize() {
       setWidth(window.innerWidth);
     }
-    window.addEventListener('resize', handleResize);
-    return (() => {
-      window.removeEventListener('resize', handleResize);
-    });
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   });
 
   // Opening hamburger Menu
@@ -27,18 +30,17 @@ export function NavBar() {
     e.preventDefault();
 
     dispatch({
-      type: 'TOGGLE_ACTION',
+      type: "TOGGLE_ACTION",
     });
   }
 
   return (
     <>
-      {(width < 771 || window.onload)
-      && (
-      <Nav>
-        <h2>Menu</h2>
-        <BiMenu className="hamburguer" onClick={toggleHamburger} />
-      </Nav>
+      {(width <= 820 || window.onload) && (
+        <Nav>
+          <h2>Menu</h2>
+          <BiMenu className="hamburguer" onClick={toggleHamburger} />
+        </Nav>
       )}
     </>
   );

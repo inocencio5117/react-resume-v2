@@ -1,15 +1,9 @@
-import { React } from 'react';
+/* eslint-disable comma-dangle */
+import { React } from "react";
 
-import {
-  ResumeContainer, Bio, AfterContent,
-} from './styled';
+import { ResumeContainer, Bio, AfterContent } from "./styled";
 
-const lorem = `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum illum facilis dolores,
-cupiditate sit autem libero totam.
-Reiciendis eos exercitationem corrupti commodi asperiores quis ipsa,
-officiis optio explicabo laborum dolorum modi eligendi iste numquam beatae expedita
-laudantium ipsam quo nesciunt omnis odio? Excepturi autem,
-iusto laborum quasi magni magnam quas!`;
+import { jobMarinha, universidade } from "../../assets/data/resumeInfo";
 
 function infoWrapper(period, job, company, location, image, alt, text) {
   return (
@@ -31,9 +25,7 @@ function infoWrapper(period, job, company, location, image, alt, text) {
         </span>
       </div>
 
-      <p>
-        {text}
-      </p>
+      <pre>{text}</pre>
     </div>
   );
 }
@@ -43,40 +35,43 @@ export function Resume() {
     <>
       <ResumeContainer>
         <Bio>
-          <h3>Bio &amp; Skills</h3>
+          <h3>Bio</h3>
 
           <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Debitis quam ea, incidunt in aut ratione atque perspiciatis voluptatum,
-            ipsam quis laudantium quisquam a blanditiis voluptatibus nobis sequi dolorem soluta rem.
+            Graduando em Analise e Desenvolvimento de Sisitemas e estudande de
+            desenvolvimento backend, usando as linguagens Typescript e
+            Javascript.
           </div>
           <br />
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum illum facilis dolores,
-            cupiditate sit autem libero totam.
-            Reiciendis eos exercitationem corrupti commodi asperiores quis ipsa,
-            officiis optio explicabo laborum dolorum modi eligendi iste numquam beatae expedita
-            laudantium ipsam quo nesciunt omnis odio? Excepturi autem,
-            iusto laborum quasi magni magnam quas!
-          </div>
         </Bio>
-
       </ResumeContainer>
 
       <AfterContent>
-        <h3>Professional Experience</h3>
+        <h3>Experiência Profissional</h3>
 
-        {infoWrapper('Period', 'Job', 'Company', 'Location', 'Image', 'Alt', lorem)}
-
-        {infoWrapper('Period', 'Job', 'Company', 'Location', 'Image', 'Alt', lorem)}
+        {infoWrapper(
+          "2018 - 2021",
+          "Soldado Fuzileiro Naval",
+          "Marinha do Brasil (Corpo de Fuziliros Navais)",
+          "Sorocaba -SP",
+          "Image",
+          "Alt",
+          jobMarinha.description
+        )}
       </AfterContent>
 
       <AfterContent>
-        <h3>Academic Backgorund</h3>
+        <h3>Formação Acadêmica</h3>
 
-        {infoWrapper('Period', 'Job', 'Company', 'Location', 'Image', 'Alt', lorem)}
-
-        {infoWrapper('Period', 'Job', 'Company', 'Location', 'Image', 'Alt', lorem)}
+        {infoWrapper(
+          "2021 - 2023",
+          "Tecnologia em Análise e Desenvolvimento de Sistemas",
+          "UniCesumar",
+          "São Paulo - SP",
+          "Image",
+          "Alt",
+          universidade.description
+        )}
       </AfterContent>
     </>
   );

@@ -1,4 +1,4 @@
-import { secondaryGrey } from './Colors';
+import { secondaryGrey } from "./Colors";
 
 export const Pages = `
   background-color: ${secondaryGrey};

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Nav = styled.nav`
   display: flex;
@@ -11,9 +11,9 @@ export const Nav = styled.nav`
   width: 21rem;
   height: auto;
 
-  @media (max-width: 756px) {
-      width: 80vw;
-    }
+  @media (max-width: 820px) {
+    width: 80vw;
+  }
 
   .hamburguer {
     height: 1.75rem;

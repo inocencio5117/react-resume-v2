@@ -1,25 +1,22 @@
-import { React } from 'react';
-import { PropTypes } from 'prop-types';
+import { React } from "react";
+import { PropTypes } from "prop-types";
 
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight } from "react-icons/fa";
 
-import { ProjectsContainer } from './styled';
+import { ProjectsContainer } from "./styled";
 
 export function Projects({ projName, link, description }) {
-  const desc = description || '';
+  const desc = description || "";
 
   return (
     <ProjectsContainer>
       <span>
         <div>
           <h4>{projName}</h4>
-          <p>
-            {desc}
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, quo?
-          </p>
+          <p>{desc}</p>
         </div>
         <a href={link} target="_blank" rel="noreferrer noopener">
-          Go to the project
+          Acesse o Projeto
           <FaArrowRight className="arrow" />
         </a>
       </span>
@@ -33,4 +30,4 @@ Projects.propTypes = {
   link: PropTypes.string.isRequired,
 };
 
-Projects.defaultProps = { description: '' };
+Projects.defaultProps = { description: "" };
