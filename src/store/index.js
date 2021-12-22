@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 
 const initialState = {
-  toggler: false,
+  toggler: true,
 };
 
 const reducer = (state = initialState, action) => {
