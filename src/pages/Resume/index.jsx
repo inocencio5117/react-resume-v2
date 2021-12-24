@@ -3,33 +3,6 @@ import { React } from "react";
 
 import { ResumeContainer, Bio, AfterContent } from "./styled";
 
-import { jobMarinha, universidade } from "../../assets/data/resumeInfo";
-
-function infoWrapper(period, job, company, location, image, alt, text) {
-  return (
-    <div>
-      <div className="wrapper">
-        <span>{period}</span>
-
-        <span>
-          <h4>{job}</h4>
-          <span>{company}</span>
-          <br />
-          <span>{location}</span>
-        </span>
-
-        {/* <img src={image} alt={alt} /> */}
-        <span>
-          {image}
-          {alt}
-        </span>
-      </div>
-
-      <pre>{text}</pre>
-    </div>
-  );
-}
-
 export function Resume() {
   return (
     <>
@@ -49,29 +22,49 @@ export function Resume() {
       <AfterContent>
         <h3>Experiência Profissional</h3>
 
-        {infoWrapper(
-          "2018 - 2021",
-          "Soldado Fuzileiro Naval",
-          "Marinha do Brasil (Corpo de Fuziliros Navais)",
-          "Sorocaba -SP",
-          "Image",
-          "Alt",
-          jobMarinha.description
-        )}
+        <div>
+          <div className="wrapper">
+            <span>2018 - 2021</span>
+
+            <span>
+              <h4>Soldado Fuzileiro Naval</h4>
+              <span>Marinha do Brasil</span>
+              <br />
+              <span>Sorocaba - SP</span>
+            </span>
+          </div>
+          <ul>
+            <li>Atuava diretamente na guarda e proteção das instalações</li>
+            <li>
+              Atuava como auxiliar de descontaminação na companhina de defesa
+              NBQR
+            </li>
+            <li>
+              Possuia Aptidão Média para a Carreira excelente durante todo o
+              tempo servido
+            </li>
+          </ul>
+        </div>
       </AfterContent>
 
       <AfterContent>
         <h3>Formação Acadêmica</h3>
 
-        {infoWrapper(
-          "2021 - 2023",
-          "Tecnologia em Análise e Desenvolvimento de Sistemas",
-          "UniCesumar",
-          "São Paulo - SP",
-          "Image",
-          "Alt",
-          universidade.description
-        )}
+        <div>
+          <div className="wrapper">
+            <span>2021 - Presente</span>
+
+            <span>
+              <h4>Tecnologia em Análise e Desenvolvimento de Sistemas</h4>
+              <span>Unicesumar</span>
+              <br />
+              <span>São Paulo - SP</span>
+            </span>
+          </div>
+          <ul>
+            <li>Cursando o 3° semestre</li>
+          </ul>
+        </div>
       </AfterContent>
     </>
   );

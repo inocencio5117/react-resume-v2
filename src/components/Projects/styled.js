@@ -10,12 +10,11 @@ export const ProjectsContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
-    width: auto;
-    height: auto;
+    width: 14rem;
+    height: 9.5rem;
     background-color: ${secondaryGrey};
 
     padding: 1rem;
-    margin: 0.5rem;
 
     border-radius: inherit;
 
@@ -23,7 +22,7 @@ export const ProjectsContainer = styled.div`
 
     div > p {
       font-size: 0.925rem;
-      margin: 0.5rem 0rem;
+      margin: 0.5rem 0.25rem;
     }
 
     a {
@@ -41,10 +40,12 @@ export const ProjectsContainer = styled.div`
       .arrow {
         margin-left: 0.7rem;
       }
-    }
 
-    &:hover {
-      transform: scale(1.1);
+      &:hover {
+        color: black;
+      }
+
+      transition: all 250ms ease-in-out;
     }
   }
 `;

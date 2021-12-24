@@ -14,6 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export function ContactMe() {
   let validForm = false;
+  // const emailSent = false;
 
   function sendEmail(e) {
     e.preventDefault();
@@ -47,6 +48,7 @@ export function ContactMe() {
   const [emailError, setEmailError] = useState("");
   const [nameError, setNameError] = useState("");
   const [subjectError, setSubjectError] = useState("");
+  const [contentError, setContentError] = useState("");
 
   const validateEmail = (e) => {
     const email = e.target.value;
@@ -84,6 +86,25 @@ export function ContactMe() {
     }
   };
 
+  const validateContent = (e) => {
+    const content = e.target.value;
+
+    if (content === "") {
+      setContentError("Conteúdo não pode estar vazio");
+      validForm = false;
+    } else {
+      setContentError("");
+      validForm = true;
+    }
+  };
+
+  // const clearInputs = (e) => {
+  //   if (emailSent) {
+  //     e.target.value = "";
+  //     emailSent = false;
+  //   }
+  // };
+
   return (
     <ContactContainer>
       <h3>Contact Me</h3>
@@ -118,10 +139,13 @@ export function ContactMe() {
           cols="30"
           rows="10"
           placeholder="CONTEÚDO"
+          onChange={(e) => validateContent(e)}
         />
+        {contentError !== "" ? (
+          <span className="error">{contentError}</span>
+        ) : null}
 
         <button type="submit">ENVIAR</button>
-
         <ToastContainer />
       </form>
     </ContactContainer>

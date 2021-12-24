@@ -29,42 +29,30 @@ export const Aside = styled.aside`
     margin: 1rem 0rem;
   }
 
-  > img {
-    width: auto;
+  .img-container {
     height: 16rem;
-    margin: 1rem 4rem;
+    width: 100%;
+
+    margin-top: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      height: 100%;
+      width: auto;
+    }
   }
 
   @media (max-width: 1160px) {
     margin-right: 0rem;
     width: 100%;
-
-    > img {
-      width: auto;
-      height: 15rem;
-      margin-left: 35%;
-    }
   }
 
   @media (max-width: 1024px) {
     margin-right: 0rem;
     width: 80vw;
-  }
-
-  @media (max-width: 768px) {
-    width: 80vw;
-
-    > img {
-      width: auto;
-      margin: 1rem 35%;
-    }
-  }
-
-  @media (max-width: 597px) {
-    > img {
-      width: auto;
-      margin: 1rem 25%;
-    }
   }
 `;
 
@@ -103,6 +91,8 @@ export const Attachments = styled.div`
   display: flex;
   flex-direction: column;
 
+  padding: 0rem 0rem 1.5rem 0rem;
+
   > div {
     align-self: center;
     text-align: center;
@@ -116,7 +106,7 @@ export const Attachments = styled.div`
     border-radius: 5px;
 
     padding: 0.75rem 0.5rem;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
 
     span + span {
       cursor: pointer;
@@ -124,20 +114,20 @@ export const Attachments = styled.div`
   }
 `;
 
-export const Skills = styled.div`
-  display: flex;
-  flex-direction: column;
+// export const Skills = styled.div`
+//   display: flex;
+//   flex-direction: column;
 
-  margin: 1rem 0rem;
+//   margin: 1rem 0rem;
 
-  > div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+//   > div {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
 
-    color: ${primaryViolet};
-    width: 100%;
+//     color: ${primaryViolet};
+//     width: 100%;
 
-    padding: 1rem;
-  }
-`;
+//     padding: 1rem;
+//   }
+// `;

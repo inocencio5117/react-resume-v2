@@ -36,7 +36,7 @@ export function NavBar() {
 
   return (
     <>
-      {(width <= 820 || window.onload) && (
+      {(width <= 808 || window.onload) && (
         <Nav>
           <h2>Menu</h2>
           <BiMenu className="hamburguer" onClick={toggleHamburger} />

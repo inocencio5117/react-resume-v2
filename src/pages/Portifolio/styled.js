@@ -15,6 +15,10 @@ export const Projs = styled.div`
   gap: 0.45rem;
 
   @media (max-width: 1024px) {
-    grid-template-columns: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
   }
 `;

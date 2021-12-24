@@ -19,19 +19,26 @@ export const IAm = styled.section`
 export const Knoledge = styled.div`
   ${HeaderStyle()}
 
-  ul {
-    padding-left: 2rem;
+  .knoledge-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 
-    .check {
-      margin-right: 1rem;
-      color: ${primaryViolet};
+    ul {
+      .check {
+        margin-right: 0.5rem;
+        color: ${primaryViolet};
 
-      font-size: 1.325rem;
-    }
+        font-size: 1.325rem;
+      }
 
-    > li {
-      display: flex;
-      align-items: center;
+      > li {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 0.25rem;
+      }
     }
   }
 `;

@@ -24,19 +24,38 @@ export const AfterContent = styled.section`
     display: flex;
     flex-direction: column;
 
-    > div,
-    > pre {
-      margin-bottom: 1.75rem;
-      font-family: "Roboto", sans-Serif;
-    }
-
     width: 100%;
+
+    padding: 0rem 2rem;
 
     .wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
+
+      margin-bottom: 1.5rem;
+
+      @media (min-width: 375px) {
+        flex-direction: column;
+        align-items: center;
+
+        span {
+          margin-bottom: 1.25rem;
+        }
+      }
     }
-    padding: 0rem 2rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      padding-left: 2rem;
+
+      li {
+        list-style: disc;
+      }
+    }
   }
 
   > div + div {

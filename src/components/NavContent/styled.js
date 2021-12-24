@@ -43,13 +43,17 @@ export const NavStyle = styled.div`
         margin-bottom: 0.25rem;
       }
 
-      > a {
+      a {
         display: flex;
         align-items: center;
         justify-content: center;
 
         color: inherit;
         cursor: pointer;
+
+        &:focus {
+          color: black;
+        }
 
         svg {
           margin-right: 0.5rem;
@@ -64,9 +68,13 @@ export const NavStyle = styled.div`
 
   @media (max-width: 1024px) {
     width: 80vw;
+
+    ul > li {
+      padding: 0rem 1rem;
+    }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 788px) {
     &.open {
       display: flex;
       background-color: transparent;

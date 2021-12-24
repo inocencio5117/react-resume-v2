@@ -17,13 +17,13 @@ export const ContactContainer = styled.section`
 
     .error {
       color: red;
-      margin: 0.5rem 0rem;
+      margin: 0.5rem 0.5rem;
     }
 
     > input,
     textarea {
       width: 100%;
-      margin-bottom: 0.5rem;
+      margin: 0.5rem 0rem;
       padding: 0.5rem;
 
       outline: none;
@@ -62,6 +62,7 @@ export const ContactContainer = styled.section`
       outline: 1px solid ${primaryPurple};
       background-color: rgba(189, 195, 199, 1);
     }
+
     @media (max-width: 1024px) {
       > button {
         align-self: center;
