@@ -34,7 +34,7 @@ export const AfterContent = styled.section`
 
       margin-bottom: 1.5rem;
 
-      @media (min-width: 375px) {
+      @media (max-width: 375px) {
         flex-direction: column;
         align-items: center;
 
