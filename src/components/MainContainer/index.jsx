@@ -23,18 +23,10 @@ export function MainContainer() {
             <NavContent />
 
             <Switch>
-              <Route path="/" exact component={About}>
-                <About />
-              </Route>
-              <Route path="/resume" exact component={Resume}>
-                <Resume />
-              </Route>
-              <Route path="/portifolio" exact component={Portifolio}>
-                <Portifolio />
-              </Route>
-              <Route path="/contactme" exact component={ContactMe}>
-                <ContactMe />
-              </Route>
+              <Route path="/" exact component={About} />
+              <Route path="/resume" component={Resume} />
+              <Route path="/portifolio" component={Portifolio} />
+              <Route path="/contactme" component={ContactMe} />
             </Switch>
           </Content>
         </ContentContainer>
