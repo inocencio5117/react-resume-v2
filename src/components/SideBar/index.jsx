@@ -64,7 +64,12 @@ export function SideBar() {
         <div>
           <span>Curriculum Vitae</span>
           <span>
-            <a href="../assets/data/Vinicius-Inocencio-curriculum.pdf" download>
+            <a
+              href="https://drive.google.com/file/d/1AyKR6GzKxVN8v7fICsagyi5NFdAKbIlh/view?usp=sharing"
+              download
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <GrDocumentDownload />
             </a>
           </span>

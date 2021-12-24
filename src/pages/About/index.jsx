@@ -28,7 +28,7 @@ export function About() {
         <br />
         <div>
           Hoje tenho foco no nicho de desenvolvimento backend, na stack
-          JavaScript/Typescript, usando Node.js e Express.js. Tenho tmaém
+          JavaScript/Typescript, usando Node.js e Express.js. Tenho também
           conhecimentos em Python, HTML e CSS. Gosto muito de explorar e
           aprender coisas novas, e pensando em compreender os processos de baixo
           nível do computador tenho esudado C e Rust.
