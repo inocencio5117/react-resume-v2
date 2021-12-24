@@ -16,4 +16,4 @@ This application is an online resume meant to show my skills and studying progre
 - React-router-dom
 - React Icons
 - Styled-components
-- Material UI
+- EmailJS
