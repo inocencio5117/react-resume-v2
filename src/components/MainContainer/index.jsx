@@ -1,6 +1,7 @@
+/* eslint-disable object-curly-newline */
 import { React } from "react";
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import { NavBar } from "../NavBar";
 import { SideBar } from "../SideBar";
@@ -24,9 +25,10 @@ export function MainContainer() {
 
             <Switch>
               <Route path="/" exact component={About} />
-              <Route path="/resume" component={Resume} />
-              <Route path="/portifolio" component={Portifolio} />
-              <Route path="/contactme" component={ContactMe} />
+              <Route path="/resume" exact component={Resume} />
+              <Route path="/portifolio" exact component={Portifolio} />
+              <Route path="/contactme" exact component={ContactMe} />
+              <Redirect from="*" to="/" />
             </Switch>
           </Content>
         </ContentContainer>
